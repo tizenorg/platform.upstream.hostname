@@ -15,15 +15,14 @@ DNS name, and to display or set its hostname or NIS domain name.
 %setup -q -n hostname
 
 %build
-iconv -f iso-8859-1 -t utf-8 -o hostname.tmp hostname.1.fr && mv hostname.tmp hostname.1.fr
 make CFLAGS="%{optflags} $CFLAGS"
 
 %install
 make BASEDIR=%{buildroot} install
+# english is enough
+rm -rf %{buildroot}/usr/share/man/fr
 
-%find_lang %{name} --all-name --with-man
-
-%files -f %{name}.lang
+%files 
 %license COPYRIGHT
 /bin/*
 %{_mandir}/man1/*
