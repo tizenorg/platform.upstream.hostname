@@ -1,0 +1,8 @@
+Change-Id: If9639fe7b32dddb132ae57f460239ca49cc1cc71
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 10:05:24 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4701
+Project: platform/upstream/hostname
+Branch: refs/heads/tizen
