@@ -1,3 +1,6 @@
+* Fri Sep 13 2013 Aleksander Zdyb <a.zdyb@partner.samsung.com> accepted/tizen/20130912.200049@f9639fe
+- Extracted docs into a separate package
+
 * Fri Dec 14 2012 Anas Nashif <anas.nashif@intel.com> upstream/3.12@4b2f5fe
 - initial release
 

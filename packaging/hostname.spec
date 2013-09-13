@@ -4,7 +4,7 @@ Release:        0
 License:        GPL-2.0+
 Summary:        Utility to set/show the host name or domain name
 Url:            http://packages.qa.debian.org/h/hostname.html
-Group:          System/Base
+Group:          System/Network
 Source0:        http://ftp.de.debian.org/debian/pool/main/h/hostname/hostname_%{version}.tar.gz
 Source1001: 	hostname.manifest
 
@@ -28,5 +28,7 @@ rm -rf %{buildroot}/usr/share/man/fr
 %manifest %{name}.manifest
 %license COPYRIGHT
 /bin/*
-%{_mandir}/man1/*
+
+
+%docs_package
 
