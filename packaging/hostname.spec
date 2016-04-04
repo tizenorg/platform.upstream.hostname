@@ -17,6 +17,9 @@ DNS name, and to display or set its hostname or NIS domain name.
 cp %{SOURCE1001} .
 
 %build
+export CFLAGS+=" -fvisibility=hidden"
+  export CXXFLAGS+=" -fvisibility=hidden"
+  
 make CFLAGS="%{optflags} $CFLAGS"
 
 %install
